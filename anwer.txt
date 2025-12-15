@@ -1,0 +1,32 @@
+Responder las siguientes preguntas?
+
+1.- Se puede crear un método abstracto dentro de la definición de una clase concreta?, 
+compruébalo ...
+No, no se puede crear un método abstracto dentro de la definición de una 
+clase concreta. 
+Instrumento es abstracta y tiene métodos abstractos (tocar() y afinar()), mientras que 
+Guitarra y Piano son clases concretas que implementan estos métodos.
+
+
+
+2.- Se puede crear un constructor sobrecargado de la definición de una clase abstracta?, 
+compruébalo...
+Sí, se puede crear un constructor sobrecargado en la definición de una 
+clase abstracta. En Instrumento.java, tenemos:
+Instrumento() ← Constructor por defecto
+Instrumento(String nombre, String tipo) ← Constructor sobrecargado
+Ambos constructores coexisten en la misma clase abstracta
+
+Las clases hijas pueden usar cualquiera:
+
+Guitarra podría llamar super() (constructor por defecto)
+O super("Mi Guitarra", "Cuerda") (constructor sobrecargado)
+
+terminal output:
+PS C:\Users\veronicob\Desktop\poo7-10-25> cd "c:\Users\veronicob\Desktop\poo7-10-25"
+PS C:\Users\veronicob\Desktop\poo7-10-25> javac *.java
+PS C:\Users\veronicob\Desktop\poo7-10-25> java Main
+Guitarra1 está siendo tocada.
+Guitarra2 está siendo tocada.
+Piano1 está siendo tocado.
+Piano2 está siendo tocado.
